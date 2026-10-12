@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Classes | FITFLOW</title>
+    <meta name="description" content="Browse the weekly FITFLOW class schedule: boxing, HIIT, yoga, strength, conditioning and functional training.">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FITFLOW">
+    <meta property="og:title" content="Classes | FITFLOW">
+    <meta property="og:description" content="Browse the weekly FITFLOW class schedule: boxing, HIIT, yoga, strength, conditioning and functional training.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Cpath d='M9 7h15v4.5H14v3h8v4.5h-8V25H9z' fill='%23c8ff00'/%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Classes page CSS -->
+    <link rel="stylesheet" href="classes.css">
+
+    <noscript><style>
+        /* Without JavaScript the mobile menu button cannot work, so show the links inline. */
+        @media (max-width: 1000px) {
+            .menu-btn { display: none; }
+            .navbar { height: auto; flex-wrap: wrap; padding-top: 14px; padding-bottom: 8px; position: static; }
+            .nav-links { display: flex; position: static; flex-direction: row; flex-wrap: wrap; gap: 0 20px; width: 100%; order: 3; padding: 6px 0; border: 0; background: none; }
+            .nav-links a { border: 0; padding: 8px 0; font-size: 14px; }
+            .nav-links .nav-cta-mobile { display: none; }
+        }
+    </style></noscript>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+
+
+    <!-- =========================
+     NAVBAR
+========================= -->
+
+    <header class="navbar" id="navbar">
+        <a href="index.html" class="logo">FIT<span>FLOW</span></a>
+
+        <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+            <a href="index.html">Home</a><a href="programs.html">Programs</a><a href="classes.html" class="active" aria-current="page">Classes</a><a href="trainers.html">Trainers</a><a href="membership.html">Membership</a><a href="contact.html">Contact</a>
+            <a href="free-trial.html" class="nav-cta-mobile">Book Free Trial</a>
+        </nav>
+
+        <a href="free-trial.html" class="nav-cta">Book Free Trial</a>
+
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+            <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+    </header>
+
+
+    <main id="main">
+
+
+        <!-- =========================
+     HERO
+========================= -->
+
+        <section class="classes-hero">
+
+            <div class="classes-hero-content">
+
+                <p class="eyebrow">
+                    <span></span>
+                    TRAIN TOGETHER
+                </p>
+
+                <h1>
+                    FIND YOUR
+                    <span>CLASS.</span>
+                </h1>
+
+                <p class="classes-hero-text">
+                    From high-intensity workouts to focused strength
+                    sessions, find classes that challenge you and keep
+                    your training exciting.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+     INTRO
+========================= -->
+
+        <section class="classes-intro">
+
+            <div class="classes-intro-inner">
+
+                <p class="eyebrow">
+                    <span></span>
+                    GROUP TRAINING
+                </p>
+
+                <h2>
+                    TRAIN HARDER.
+                    <span>TOGETHER.</span>
+                </h2>
+
+                <p>
+                    Our group classes combine expert coaching, structured
+                    workouts, and a motivating community to help you stay
+                    consistent and keep progressing.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+     FILTER
+========================= -->
+
+        <div class="category-bar" role="group" aria-label="Filter classes by category">
+
+            <button class="category-btn active" data-filter="all" type="button" aria-pressed="true">
+                All Classes
+            </button>
+
+            <button class="category-btn" data-filter="strength" type="button" aria-pressed="false">
+                Strength
+            </button>
+
+            <button class="category-btn" data-filter="cardio" type="button" aria-pressed="false">
+                Cardio
+            </button>
+
+            <button class="category-btn" data-filter="mobility" type="button" aria-pressed="false">
+                Mobility
+            </button>
+
+        </div>
+
+
+        <!-- =========================
+     CLASS CARDS
+========================= -->
+
+        <p class="visually-hidden" id="classStatus" role="status" aria-live="polite"></p>
+
+        <section class="classes-grid">
+
+
+            <!-- 01 -->
+
+            <article class="class-card" data-category="strength">
+
+                <div class="class-image class-strength">
+
+                    <span class="class-level">
+                        All Levels
+                    </span>
+
+                </div>
+
+                <div class="class-content">
+
+                    <h3>Strength Lab</h3>
+
+                    <p>
+                        Build foundational strength through progressive
+                        resistance training and expert coaching.
+                    </p>
+
+                    <div class="class-details">
+
+                        <div>
+                            <small>Duration</small>
+                            <strong>60 Min</strong>
+                        </div>
+
+                        <div>
+                            <small>Coach</small>
+                            <strong>Alex</strong>
+                        </div>
+
+                        <div>
+                            <small>Level</small>
+                            <strong>All Levels</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 02 -->
+
+            <article class="class-card" data-category="cardio">
+
+                <div class="class-image class-hiit">
+
+                    <span class="class-level">
+                        Intermediate
+                    </span>
+
+                </div>
+
+                <div class="class-content">
+
+                    <h3>HIIT Blast</h3>
+
+                    <p>
+                        Short, intense intervals designed to push your
+                        conditioning and cardiovascular fitness.
+                    </p>
+
+                    <div class="class-details">
+
+                        <div>
+                            <small>Duration</small>
+                            <strong>45 Min</strong>
+                        </div>
+
+                        <div>
+                            <small>Coach</small>
+                            <strong>Jordan</strong>
+                        </div>
+
+                        <div>
+                            <small>Level</small>
+                            <strong>Intermediate</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 03 -->
+
+            <article class="class-card" data-category="mobility">
+
+                <div class="class-image class-mobility">
+
+                    <span class="class-level">
+                        All Levels
+                    </span>
+
+                </div>
+
+                <div class="class-content">
+
+                    <h3>Mobility Flow</h3>
+
+                    <p>
+                        Improve movement quality, flexibility, balance,
+                        and recovery with guided mobility work.
+                    </p>
+
+                    <div class="class-details">
+
+                        <div>
+                            <small>Duration</small>
+                            <strong>45 Min</strong>
+                        </div>
+
+                        <div>
+                            <small>Coach</small>
+                            <strong>Emma</strong>
+                        </div>
+
+                        <div>
+                            <small>Level</small>
+                            <strong>All Levels</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 04 -->
+
+            <article class="class-card" data-category="strength">
+
+                <div class="class-image class-functional">
+
+                    <span class="class-level">
+                        Intermediate
+                    </span>
+
+                </div>
+
+                <div class="class-content">
+
+                    <h3>Functional Fit</h3>
+
+                    <p>
+                        Full-body training focused on strength, movement,
+                        coordination, and athletic performance.
+                    </p>
+
+                    <div class="class-details">
+
+                        <div>
+                            <small>Duration</small>
+                            <strong>50 Min</strong>
+                        </div>
+
+                        <div>
+                            <small>Coach</small>
+                            <strong>Ryan</strong>
+                        </div>
+
+                        <div>
+                            <small>Level</small>
+                            <strong>Intermediate</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 05 -->
+
+            <article class="class-card" data-category="cardio">
+
+                <div class="class-image class-conditioning">
+
+                    <span class="class-level">
+                        Advanced
+                    </span>
+
+                </div>
+
+                <div class="class-content">
+
+                    <h3>Conditioning</h3>
+
+                    <p>
+                        High-energy sessions built to challenge endurance,
+                        stamina, and overall work capacity.
+                    </p>
+
+                    <div class="class-details">
+
+                        <div>
+                            <small>Duration</small>
+                            <strong>50 Min</strong>
+                        </div>
+
+                        <div>
+                            <small>Coach</small>
+                            <strong>Mike</strong>
+                        </div>
+
+                        <div>
+                            <small>Level</small>
+                            <strong>Advanced</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 06 -->
+
+            <article class="class-card" data-category="cardio">
+
+                <div class="class-image class-boxing">
+
+                    <span class="class-level">
+                        All Levels
+                    </span>
+
+                </div>
+
+                <div class="class-content">
+
+                    <h3>Boxing Fit</h3>
+
+                    <p>
+                        Learn boxing fundamentals while improving
+                        coordination, conditioning, and confidence.
+                    </p>
+
+                    <div class="class-details">
+
+                        <div>
+                            <small>Duration</small>
+                            <strong>60 Min</strong>
+                        </div>
+
+                        <div>
+                            <small>Coach</small>
+                            <strong>Sam</strong>
+                        </div>
+
+                        <div>
+                            <small>Level</small>
+                            <strong>All Levels</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- =========================
+     WEEKLY SCHEDULE
+========================= -->
+
+        <section class="schedule-section">
+
+            <div class="schedule-heading">
+
+                <p class="eyebrow">
+                    <span></span>
+                    WEEKLY SCHEDULE
+                </p>
+
+                <h2>
+                    KNOW WHAT'S
+                    <span>COMING.</span>
+                </h2>
+
+                <p>
+                    Plan your week and request a free trial session in the classes
+                    that fit your schedule.
+                </p>
+
+            </div>
+
+
+            <div class="schedule-table">
+
+                <div class="schedule-row schedule-header">
+
+                    <div>Day</div>
+                    <div>Class</div>
+                    <div>Trainer</div>
+                    <div>Time</div>
+                    <div></div>
+
+                </div>
+
+
+                <div class="schedule-row">
+
+                    <div class="schedule-day">Monday</div>
+
+                    <div class="schedule-class">
+                        Strength Lab
+                    </div>
+
+                    <div class="schedule-trainer">
+                        Alex Carter
+                    </div>
+
+                    <div class="schedule-time">
+                        07:00 AM
+                    </div>
+
+                    <a href="free-trial.html?class=Strength%20Lab&amp;when=Monday%2007%3A00%20AM" class="schedule-book" aria-label="Book a free trial for Strength Lab, Monday 07:00 AM">Book</a>
+
+                </div>
+
+
+                <div class="schedule-row">
+
+                    <div class="schedule-day">Tuesday</div>
+
+                    <div class="schedule-class">
+                        HIIT Blast
+                    </div>
+
+                    <div class="schedule-trainer">
+                        Jordan Lee
+                    </div>
+
+                    <div class="schedule-time">
+                        06:00 PM
+                    </div>
+
+                    <a href="free-trial.html?class=HIIT%20Blast&amp;when=Tuesday%2006%3A00%20PM" class="schedule-book" aria-label="Book a free trial for HIIT Blast, Tuesday 06:00 PM">Book</a>
+
+                </div>
+
+
+                <div class="schedule-row">
+
+                    <div class="schedule-day">Wednesday</div>
+
+                    <div class="schedule-class">
+                        Functional Fit
+                    </div>
+
+                    <div class="schedule-trainer">
+                        Ryan Brooks
+                    </div>
+
+                    <div class="schedule-time">
+                        07:00 AM
+                    </div>
+
+                    <a href="free-trial.html?class=Functional%20Fit&amp;when=Wednesday%2007%3A00%20AM" class="schedule-book" aria-label="Book a free trial for Functional Fit, Wednesday 07:00 AM">Book</a>
+
+                </div>
+
+
+                <div class="schedule-row">
+
+                    <div class="schedule-day">Thursday</div>
+
+                    <div class="schedule-class">
+                        Mobility Flow
+                    </div>
+
+                    <div class="schedule-trainer">
+                        Emma Davis
+                    </div>
+
+                    <div class="schedule-time">
+                        06:30 PM
+                    </div>
+
+                    <a href="free-trial.html?class=Mobility%20Flow&amp;when=Thursday%2006%3A30%20PM" class="schedule-book" aria-label="Book a free trial for Mobility Flow, Thursday 06:30 PM">Book</a>
+
+                </div>
+
+
+                <div class="schedule-row">
+
+                    <div class="schedule-day">Friday</div>
+
+                    <div class="schedule-class">
+                        Conditioning
+                    </div>
+
+                    <div class="schedule-trainer">
+                        Mike Stone
+                    </div>
+
+                    <div class="schedule-time">
+                        06:00 PM
+                    </div>
+
+                    <a href="free-trial.html?class=Conditioning&amp;when=Friday%2006%3A00%20PM" class="schedule-book" aria-label="Book a free trial for Conditioning, Friday 06:00 PM">Book</a>
+
+                </div>
+
+
+                <div class="schedule-row">
+
+                    <div class="schedule-day">Saturday</div>
+
+                    <div class="schedule-class">
+                        Boxing Fit
+                    </div>
+
+                    <div class="schedule-trainer">
+                        Sam Wilson
+                    </div>
+
+                    <div class="schedule-time">
+                        10:00 AM
+                    </div>
+
+                    <a href="free-trial.html?class=Boxing%20Fit&amp;when=Saturday%2010%3A00%20AM" class="schedule-book" aria-label="Book a free trial for Boxing Fit, Saturday 10:00 AM">Book</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+     EXPERIENCE
+========================= -->
+
+        <section class="experience-section">
+
+            <div class="experience-image"></div>
+
+
+            <div class="experience-content">
+
+                <p class="eyebrow">
+                    <span></span>
+                    THE FITFLOW EXPERIENCE
+                </p>
+
+                <h2>
+                    MORE THAN
+                    <span>A WORKOUT.</span>
+                </h2>
+
+                <p>
+                    Great training isn't just about showing up. It's about
+                    having the right environment, the right coach, and the
+                    right people around you.
+                </p>
+
+
+                <div class="experience-points">
+
+                    <div class="experience-point">
+
+                        <strong>Expert Coaches</strong>
+
+                        <p>
+                            Every session is guided by experienced coaches.
+                        </p>
+
+                    </div>
+
+
+                    <div class="experience-point">
+
+                        <strong>Small Groups</strong>
+
+                        <p>
+                            More attention and better coaching in every class.
+                        </p>
+
+                    </div>
+
+
+                    <div class="experience-point">
+
+                        <strong>Real Progress</strong>
+
+                        <p>
+                            Structured sessions designed around measurable goals.
+                        </p>
+
+                    </div>
+
+
+                    <div class="experience-point">
+
+                        <strong>Strong Community</strong>
+
+                        <p>
+                            Train alongside people who are pushing forward too.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+     CTA
+========================= -->
+
+        <section class="classes-cta">
+
+            <div>
+
+                <p class="eyebrow">
+                    <span></span>
+                    FIRST SESSION
+                </p>
+
+                <h2>
+                    COME TRAIN
+                    <br>
+                    <span>WITH US.</span>
+                </h2>
+
+                <p>
+                    Try your first class completely free.
+                </p>
+
+            </div>
+
+            <a href="free-trial.html" class="primary-btn">
+                Book Free Trial
+                <span>↗</span>
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+     FOOTER
+========================= -->
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">FIT<span>FLOW</span></a>
+                <p>Train hard. Live strong.</p>
+            </div>
+
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <a href="programs.html">Programs</a>
+                <a href="classes.html">Classes</a>
+                <a href="trainers.html">Trainers</a>
+                <a href="membership.html">Membership</a>
+                <a href="contact.html">Contact</a>
+                <a href="free-trial.html">Free Trial</a>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2026 FITFLOW. All rights reserved.</p>
+                <p>Built for those who refuse to settle.</p>
+            </div>
+        </div>
+
+        <!-- OWNER TO SUPPLY: the footer previously linked to Instagram, Facebook and WhatsApp
+             with "#" placeholders. They were removed so no link goes nowhere. Add the gym's real
+             profile URLs here, e.g. <a href="https://..." rel="noopener noreferrer">Instagram</a>. -->
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

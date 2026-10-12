@@ -1,0 +1,423 @@
+
+/* =========================
+   PROGRAMS HERO
+========================= */
+
+.program-hero {
+    min-height: 65vh;
+    padding: 100px var(--gutter);
+
+    display: flex;
+    align-items: flex-end;
+
+    position: relative;
+    overflow: hidden;
+
+    border-bottom: 1px solid var(--border);
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,0.95) 0%,
+            rgba(0,0,0,0.65) 55%,
+            rgba(0,0,0,0.25) 100%
+        ),
+        url("images/programs-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.program-hero-content {
+    max-width: 850px;
+}
+
+.program-hero h1 {
+    font-size: clamp(60px, 9vw, 125px);
+    line-height: 0.85;
+    letter-spacing: -3px;
+    font-weight: 900;
+}
+
+.program-hero h1 span {
+    color: var(--accent);
+}
+
+.program-hero-text {
+    max-width: 550px;
+    color: #aaa;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-top: 30px;
+}
+
+
+/* =========================
+   PROGRAM LIST
+========================= */
+
+.program-list {
+    padding: 120px var(--gutter);
+}
+
+.program-intro {
+    max-width: 700px;
+    margin-bottom: 70px;
+}
+
+.program-intro h2 {
+    font-size: clamp(40px, 5vw, 70px);
+    line-height: 0.95;
+    letter-spacing: -2px;
+}
+
+.program-intro h2 span {
+    color: var(--accent);
+}
+
+.program-intro p:last-child {
+    max-width: 550px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 25px;
+}
+
+
+/* =========================
+   PROGRAM ITEMS
+========================= */
+
+.program-item {
+    display: grid;
+    grid-template-columns: 80px 0.9fr 1fr;
+
+    gap: 45px;
+
+    padding: 55px 0;
+
+    border-top: 1px solid var(--border);
+
+    transition: 0.3s;
+}
+
+.program-item:last-child {
+    border-bottom: 1px solid var(--border);
+}
+
+.program-item:hover {
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #0e0e0e;
+}
+
+.program-index {
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 900;
+    padding-top: 8px;
+}
+
+.program-title h3 {
+    font-size: 35px;
+    letter-spacing: -1.5px;
+}
+
+.program-title p {
+    color: #8c8c8c;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+}
+
+.program-description {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+    max-width: 450px;
+}
+
+.program-meta {
+    display: flex;
+    gap: 10px;
+    margin-top: 22px;
+    flex-wrap: wrap;
+}
+
+.program-meta span {
+    padding: 7px 10px;
+
+    border: 1px solid #292929;
+
+    color: #aaa;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+
+/* =========================
+   FEATURED PROGRAM
+========================= */
+
+.featured-program {
+    margin: 0 var(--gutter) 120px;
+
+    min-height: 550px;
+
+    display: flex;
+    align-items: flex-end;
+
+    position: relative;
+    overflow: hidden;
+
+    /* darker on the left so the copy stays readable over the photo */
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,0.88) 0%,
+            rgba(0,0,0,0.55) 45%,
+            rgba(0,0,0,0.05) 100%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(0,0,0,0.75),
+            transparent 45%
+        ),
+        url("images/strength-program.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.featured-content {
+    padding: 60px;
+    max-width: 650px;
+}
+
+.featured-content h2 {
+    font-size: clamp(45px, 6vw, 80px);
+    line-height: 0.9;
+    letter-spacing: -2px;
+}
+
+.featured-content h2 span {
+    color: var(--accent);
+}
+
+.featured-content p {
+    max-width: 500px;
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 25px 0 30px;
+}
+
+
+/* =========================
+   GOALS
+========================= */
+
+.goal-section {
+    padding: 120px var(--gutter);
+    border-top: 1px solid var(--border);
+}
+
+.goal-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 70px;
+}
+
+.goal-eyebrow {
+    justify-content: center;
+}
+
+.goal-heading h2 {
+    font-size: clamp(45px, 5vw, 70px);
+    line-height: 0.95;
+    letter-spacing: -2px;
+}
+
+.goal-heading h2 span {
+    color: var(--accent);
+}
+
+.goal-heading p:last-child {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+.goal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.goal-card {
+    display: block;
+    color: inherit;
+    padding: 40px;
+    min-height: 230px;
+
+    background: #101010;
+    border: 1px solid var(--border);
+
+    transition: 0.3s;
+}
+
+.goal-card:hover,
+.goal-card:focus-visible {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.goal-card > span {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.goal-card:hover > span,
+.goal-card:focus-visible > span {
+    transform: translate(3px, -3px);
+}
+
+.goal-card > span {
+    color: var(--accent);
+    font-size: 22px;
+}
+
+.goal-card h3 {
+    font-size: 19px;
+    margin-top: 35px;
+}
+
+.goal-card p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.7;
+    margin-top: 10px;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.program-cta {
+    margin: 0 var(--gutter) 100px;
+
+    padding: 70px;
+
+    background: var(--accent);
+    color: #000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.program-cta h2 {
+    font-size: clamp(40px, 5vw, 65px);
+    line-height: 0.9;
+    letter-spacing: -2px;
+}
+
+.program-cta p {
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.program-cta .primary-btn {
+    background: #000;
+    color: white;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .program-item {
+        grid-template-columns: 50px 1fr;
+    }
+
+    .program-description {
+        grid-column: 2;
+    }
+
+    .goal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .program-cta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .program-hero {
+        min-height: 70vh;
+        padding: 70px var(--gutter);
+    }
+
+    .program-hero h1 {
+        font-size: clamp(2.6rem, 15vw, 3.75rem);
+        letter-spacing: -2px;
+    }
+
+    .program-list,
+    .goal-section {
+        padding: 80px var(--gutter);
+    }
+
+    .program-item {
+        grid-template-columns: 35px 1fr;
+        gap: 20px;
+        padding: 40px 0;
+    }
+
+    .program-title h3 {
+        font-size: 27px;
+    }
+
+    .program-description {
+        grid-column: 2;
+    }
+
+    .featured-program {
+        margin: 0 var(--gutter) 80px;
+        min-height: 500px;
+    }
+
+    .featured-content {
+        padding: 35px;
+    }
+
+    .program-cta {
+        margin: 0 var(--gutter) 70px;
+        padding: 45px 30px;
+    }
+}
+
+
+/* very narrow phones: keep the featured heading inside its box */
+@media (max-width: 480px) {
+    .featured-content h2 {
+        font-size: clamp(2rem, 11vw, 2.8rem);
+    }
+}

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | FITFLOW</title>
+    <meta name="description" content="Contact FITFLOW with questions about memberships, classes or personal training.">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FITFLOW">
+    <meta property="og:title" content="Contact | FITFLOW">
+    <meta property="og:description" content="Contact FITFLOW with questions about memberships, classes or personal training.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Cpath d='M9 7h15v4.5H14v3h8v4.5h-8V25H9z' fill='%23c8ff00'/%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <noscript><style>
+        /* Without JavaScript the mobile menu button cannot work, so show the links inline. */
+        @media (max-width: 1000px) {
+            .menu-btn { display: none; }
+            .navbar { height: auto; flex-wrap: wrap; padding-top: 14px; padding-bottom: 8px; position: static; }
+            .nav-links { display: flex; position: static; flex-direction: row; flex-wrap: wrap; gap: 0 20px; width: 100%; order: 3; padding: 6px 0; border: 0; background: none; }
+            .nav-links a { border: 0; padding: 8px 0; font-size: 14px; }
+            .nav-links .nav-cta-mobile { display: none; }
+        }
+    </style></noscript>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar" id="navbar">
+        <a href="index.html" class="logo">FIT<span>FLOW</span></a>
+
+        <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+            <a href="index.html">Home</a><a href="programs.html">Programs</a><a href="classes.html">Classes</a><a href="trainers.html">Trainers</a><a href="membership.html">Membership</a><a href="contact.html" class="active" aria-current="page">Contact</a>
+            <a href="free-trial.html" class="nav-cta-mobile">Book Free Trial</a>
+        </nav>
+
+        <a href="free-trial.html" class="nav-cta">Book Free Trial</a>
+
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+            <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+    </header>
+
+
+    <main id="main">
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="contact-hero">
+
+            <div class="container">
+
+                <div class="contact-hero-content">
+
+                    <p class="eyebrow">GET IN TOUCH</p>
+
+                    <h1>
+                        LET'S GET<br>
+                        <span>STARTED.</span>
+                    </h1>
+
+                    <p>
+                        Have a question about memberships, classes or
+                        training? Our team is ready to help.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT INFO + FORM
+        ========================== -->
+
+        <section class="contact-main section">
+
+            <div class="container contact-grid">
+
+                <!-- INFO -->
+
+                <div class="contact-info">
+
+                    <p class="eyebrow">CONTACT FITFLOW</p>
+
+                    <h2>
+                        WE'RE HERE<br>
+                        <span>TO HELP.</span>
+                    </h2>
+
+                    <p class="contact-intro">
+                        Whether you're ready to join or simply want
+                        to know more, reach out and our team will get
+                        back to you.
+                    </p>
+
+
+                    <div class="contact-details">
+
+                        <div class="contact-detail">
+
+                            <span>01</span>
+
+                            <div>
+                                <p class="detail-label">CALL US</p>
+                                <a href="tel:+919876543210">
+                                    +91 98765 43210
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-detail">
+
+                            <span>02</span>
+
+                            <div>
+                                <p class="detail-label">EMAIL</p>
+                                <a href="mailto:hello@fitflow.com">
+                                    hello@fitflow.com
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-detail">
+
+                            <span>03</span>
+
+                            <div>
+                                <p class="detail-label">LOCATION</p>
+
+                                <p>
+                                    123 Fitness Avenue<br>
+                                    New Delhi, India
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-detail">
+
+                            <span>04</span>
+
+                            <div>
+                                <p class="detail-label">OPENING HOURS</p>
+
+                                <p>
+                                    Mon – Sat: 5:30 AM – 10:00 PM<br>
+                                    Sunday: 7:00 AM – 2:00 PM
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FORM -->
+
+                <div class="contact-form-wrapper">
+
+                    <div class="form-header">
+
+                        <p class="eyebrow">SEND A MESSAGE</p>
+
+                        <span>WE'LL GET BACK TO YOU</span>
+
+                    </div>
+
+
+                    <form class="contact-form" id="contact-form" novalidate data-endpoint="" data-fallback-tel="+919876543210" data-fallback-email="hello@fitflow.com">
+                        <!-- OWNER TO SUPPLY: set data-endpoint to a form-handling URL (e.g. Formspree) so messages are really delivered.
+                             Until then the form validates but sends nothing and says so honestly. The tel/email fallbacks above are placeholders. -->
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="contact-name">
+                                    FULL NAME
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="contact-name" autocomplete="name"
+                                    name="name"
+                                    placeholder="Your name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="contact-phone">
+                                    PHONE <span class="opt">(optional)</span>
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="contact-phone" autocomplete="tel"
+                                    name="phone"
+                                    placeholder="Your phone number"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="contact-email">
+                                EMAIL
+                            </label>
+
+                            <input
+                                type="email"
+                                id="contact-email" autocomplete="email"
+                                name="email"
+                                placeholder="you@example.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="contact-subject">
+                                WHAT CAN WE HELP WITH? <span class="opt">(optional)</span>
+                            </label>
+
+                            <select id="contact-subject" name="subject">
+
+                                <option value="">
+                                    Select an option
+                                </option>
+
+                                <option value="membership">
+                                    Membership
+                                </option>
+
+                                <option value="classes">
+                                    Classes
+                                </option>
+
+                                <option value="personal-training">
+                                    Personal Training
+                                </option>
+
+                                <option value="general">
+                                    General Question
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="contact-message">
+                                MESSAGE
+                            </label>
+
+                            <textarea
+                                id="contact-message"
+                                name="message"
+                                rows="6"
+                                placeholder="How can we help?"
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary contact-submit"
+                        >
+                            Send Message
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MAP / LOCATION
+        ========================== -->
+
+        <section class="contact-location section">
+
+            <div class="container">
+
+                <div class="location-grid">
+
+                    <div class="location-content">
+
+                        <p class="eyebrow">FIND US</p>
+
+                        <h2>
+                            COME<br>
+                            <span>TRAIN.</span>
+                        </h2>
+
+                        <p>
+                            Visit the gym, meet the team and see
+                            the facility for yourself.
+                        </p>
+
+                        <a href="https://www.google.com/maps/search/?api=1&amp;query=123+Fitness+Avenue%2C+New+Delhi%2C+India" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                            Get Directions
+                        </a>
+
+                    </div>
+
+
+                    <div class="map-placeholder">
+
+                        <div class="map-content">
+
+                            <span class="map-pin">+</span>
+
+                            <p>FITFLOW</p>
+
+                            <small>
+                                123 Fitness Avenue<br>
+                                New Delhi, India
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             WHATSAPP CTA
+        ========================== -->
+
+        <section class="contact-whatsapp section">
+
+            <div class="container">
+
+                <div class="whatsapp-box">
+
+                    <div>
+
+                        <p class="eyebrow">QUICK QUESTION?</p>
+
+                        <h2>
+                            TALK TO US<br>
+                            <span>ON WHATSAPP.</span>
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="https://wa.me/919876543210"
+                        class="btn btn-primary"
+                        target="_blank"
+                    >
+                        Chat on WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">FIT<span>FLOW</span></a>
+                <p>Train hard. Live strong.</p>
+            </div>
+
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <a href="programs.html">Programs</a>
+                <a href="classes.html">Classes</a>
+                <a href="trainers.html">Trainers</a>
+                <a href="membership.html">Membership</a>
+                <a href="contact.html">Contact</a>
+                <a href="free-trial.html">Free Trial</a>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2026 FITFLOW. All rights reserved.</p>
+                <p>Built for those who refuse to settle.</p>
+            </div>
+        </div>
+
+        <!-- OWNER TO SUPPLY: the footer previously linked to Instagram, Facebook and WhatsApp
+             with "#" placeholders. They were removed so no link goes nowhere. Add the gym's real
+             profile URLs here, e.g. <a href="https://..." rel="noopener noreferrer">Instagram</a>. -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

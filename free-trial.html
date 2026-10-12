@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Free Trial | FITFLOW</title>
+    <meta name="description" content="Book a free no-commitment trial session at FITFLOW. No payment required.">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FITFLOW">
+    <meta property="og:title" content="Free Trial | FITFLOW">
+    <meta property="og:description" content="Book a free no-commitment trial session at FITFLOW. No payment required.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Cpath d='M9 7h15v4.5H14v3h8v4.5h-8V25H9z' fill='%23c8ff00'/%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="free-trial.css">
+    <noscript><style>
+        /* Without JavaScript the mobile menu button cannot work, so show the links inline. */
+        @media (max-width: 1000px) {
+            .menu-btn { display: none; }
+            .navbar { height: auto; flex-wrap: wrap; padding-top: 14px; padding-bottom: 8px; position: static; }
+            .nav-links { display: flex; position: static; flex-direction: row; flex-wrap: wrap; gap: 0 20px; width: 100%; order: 3; padding: 6px 0; border: 0; background: none; }
+            .nav-links a { border: 0; padding: 8px 0; font-size: 14px; }
+            .nav-links .nav-cta-mobile { display: none; }
+        }
+    </style></noscript>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+
+    <!-- NAVBAR -->
+
+    <header class="navbar" id="navbar">
+        <a href="index.html" class="logo">FIT<span>FLOW</span></a>
+
+        <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+            <a href="index.html">Home</a><a href="programs.html">Programs</a><a href="classes.html">Classes</a><a href="trainers.html">Trainers</a><a href="membership.html">Membership</a><a href="contact.html">Contact</a>
+            <a href="free-trial.html" class="nav-cta-mobile">Book Free Trial</a>
+        </nav>
+
+        <a href="free-trial.html" class="nav-cta active" aria-current="page">Book Free Trial</a>
+
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+            <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+    </header>
+
+
+    <main id="main">
+
+        <!-- HERO -->
+
+        <section class="trial-hero">
+
+            <div class="container">
+
+                <div class="trial-hero-content">
+
+                    <p class="eyebrow">NO COMMITMENT. JUST TRAIN.</p>
+
+                    <h1>
+                        YOUR FIRST<br>
+                        <span>SESSION IS FREE.</span>
+                    </h1>
+
+                    <p>
+                        Come see the gym, meet the coaches and experience
+                        the FITFLOW training environment before you decide.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BOOKING SECTION -->
+
+        <section class="trial-booking section">
+
+            <div class="container trial-grid">
+
+                <!-- LEFT -->
+
+                <div class="trial-info">
+
+                    <p class="eyebrow">BOOK YOUR TRIAL</p>
+
+                    <h2>
+                        START<br>
+                        <span>HERE.</span>
+                    </h2>
+
+                    <p class="trial-intro">
+                        Fill in your details and our team will get in touch
+                        to confirm your free trial session.
+                    </p>
+
+
+                    <div class="trial-benefits">
+
+                        <div class="trial-benefit">
+
+                            <span>01</span>
+
+                            <div>
+                                <h3>TOUR THE GYM</h3>
+                                <p>
+                                    See our equipment, training areas
+                                    and facilities.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="trial-benefit">
+
+                            <span>02</span>
+
+                            <div>
+                                <h3>MEET A COACH</h3>
+                                <p>
+                                    Talk about your goals and get
+                                    guidance from our team.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="trial-benefit">
+
+                            <span>03</span>
+
+                            <div>
+                                <h3>TRAIN FOR FREE</h3>
+                                <p>
+                                    Experience a real FITFLOW workout
+                                    with no membership required.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FORM -->
+
+                <div class="trial-form-wrapper">
+
+                    <div class="form-header">
+
+                        <span>FREE TRIAL</span>
+
+                        <p>TAKES LESS THAN 2 MINUTES</p>
+
+                    </div>
+
+                  <form class="trial-form" id="trial-form" novalidate data-endpoint="" data-fallback-tel="+919876543210" data-fallback-email="hello@fitflow.com">
+                        <!-- OWNER TO SUPPLY: set data-endpoint to a form-handling URL (e.g. Formspree) so requests are really delivered.
+                             Until then the form validates but sends nothing and says so honestly. The tel/email fallbacks above are placeholders. -->
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    FULL NAME
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name" autocomplete="name"
+                                    name="name"
+                                    placeholder="Your name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    PHONE NUMBER
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone" autocomplete="tel"
+                                    name="phone"
+                                    placeholder="Your phone number"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                EMAIL ADDRESS
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email" autocomplete="email"
+                                name="email"
+                                placeholder="you@example.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="goal">
+                                YOUR MAIN GOAL <span class="opt">(optional)</span>
+                            </label>
+
+                            <select id="goal" name="goal">
+
+                                <option value="">
+                                    Select your goal
+                                </option>
+
+                                <option value="strength">
+                                    Build Strength
+                                </option>
+
+                                <option value="muscle">
+                                    Build Muscle
+                                </option>
+
+                                <option value="fitness">
+                                    Improve Fitness
+                                </option>
+
+                                <option value="weight-loss">
+                                    Lose Weight
+                                </option>
+
+                                <option value="general">
+                                    General Fitness
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                ANYTHING WE SHOULD KNOW? <span class="opt">(optional)</span>
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="4"
+                                placeholder="Tell us anything that may help..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary form-submit"
+                        >
+                            Request My Free Trial
+                        </button>
+
+
+                        <p class="form-note">
+                            No payment required. Our team will contact
+                            you to confirm your session.
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WHAT TO EXPECT -->
+
+        <section class="trial-expect section">
+
+            <div class="container">
+
+                <div class="expect-heading">
+
+                    <p class="eyebrow">YOUR FIRST VISIT</p>
+
+                    <h2>
+                        KNOW WHAT<br>
+                        <span>TO EXPECT.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="expect-grid">
+
+                    <div class="expect-card">
+
+                        <span>01</span>
+
+                        <h3>ARRIVE</h3>
+
+                        <p>
+                            Meet the team and take a quick tour
+                            of the FITFLOW facility.
+                        </p>
+
+                    </div>
+
+
+                    <div class="expect-card">
+
+                        <span>02</span>
+
+                        <h3>ASSESS</h3>
+
+                        <p>
+                            Tell us about your goals and what
+                            you want to achieve.
+                        </p>
+
+                    </div>
+
+
+                    <div class="expect-card">
+
+                        <span>03</span>
+
+                        <h3>TRAIN</h3>
+
+                        <p>
+                            Get your first taste of training
+                            inside the FITFLOW environment.
+                        </p>
+
+                    </div>
+
+
+                    <div class="expect-card">
+
+                        <span>04</span>
+
+                        <h3>DECIDE</h3>
+
+                        <p>
+                            No pressure. Decide if FITFLOW
+                            is the right gym for you.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL CTA -->
+
+        <section class="trial-final section">
+
+            <div class="container">
+
+                <div class="trial-final-box">
+
+                    <p class="eyebrow">YOUR NEXT MOVE</p>
+
+                    <h2>
+                        STOP THINKING.<br>
+                        <span>START TRAINING.</span>
+                    </h2>
+
+                    <p>
+                        One session is all it takes to experience
+                        FITFLOW for yourself.
+                    </p>
+
+                    <a href="#trial-form" class="btn btn-primary">
+                        Book Free Trial
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">FIT<span>FLOW</span></a>
+                <p>Train hard. Live strong.</p>
+            </div>
+
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <a href="programs.html">Programs</a>
+                <a href="classes.html">Classes</a>
+                <a href="trainers.html">Trainers</a>
+                <a href="membership.html">Membership</a>
+                <a href="contact.html">Contact</a>
+                <a href="free-trial.html">Free Trial</a>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2026 FITFLOW. All rights reserved.</p>
+                <p>Built for those who refuse to settle.</p>
+            </div>
+        </div>
+
+        <!-- OWNER TO SUPPLY: the footer previously linked to Instagram, Facebook and WhatsApp
+             with "#" placeholders. They were removed so no link goes nowhere. Add the gym's real
+             profile URLs here, e.g. <a href="https://..." rel="noopener noreferrer">Instagram</a>. -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

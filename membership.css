@@ -1,0 +1,431 @@
+/* =========================================================
+   MEMBERSHIP PAGE
+========================================================= */
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.membership-hero {
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("images/membership-hero.jpg") center / cover no-repeat;
+}
+
+.membership-hero-content {
+    max-width: 780px;
+    padding: 100px 0;
+}
+
+.membership-hero h1 {
+    margin: 20px 0 25px;
+
+    font-size: clamp(4rem, 8vw, 7rem);
+    line-height: 0.86;
+    letter-spacing: -0.03em;
+}
+
+.membership-hero h1 span {
+    color: var(--accent);
+}
+
+.membership-hero p:not(.eyebrow) {
+    max-width: 520px;
+
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+/* =========================================================
+   PLANS
+========================================================= */
+
+.membership-plans {
+    padding-top: 120px;
+    padding-bottom: 130px;
+}
+
+.section-heading {
+    margin-bottom: 60px;
+}
+
+.section-heading h2 {
+    margin-top: 18px;
+
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: 0.9;
+    letter-spacing: -0.03em;
+}
+
+.section-heading h2 span {
+    color: var(--accent);
+}
+
+/* =========================================================
+   PRICING
+========================================================= */
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.pricing-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 600px;
+
+    padding: 38px 32px 32px;
+
+    background: var(--card);
+    border: 1px solid var(--border);
+}
+
+.pricing-card.featured {
+    border-color: var(--accent);
+    transform: translateY(-12px);
+}
+
+.popular-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 9px 15px;
+
+    background: var(--accent);
+    color: #000;
+
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.plan-label {
+    margin-bottom: 12px;
+
+    color: var(--accent);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.pricing-top h3 {
+    margin-bottom: 15px;
+
+    font-size: 1.7rem;
+    letter-spacing: -0.03em;
+}
+
+.plan-description {
+    min-height: 55px;
+
+    color: var(--muted);
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+
+.price {
+    margin-top: 30px;
+
+    font-size: 2.8rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+}
+
+.price span {
+    color: var(--accent);
+}
+
+.price small {
+    white-space: nowrap;
+    color: var(--muted);
+
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.pricing-divider {
+    height: 1px;
+
+    margin: 30px 0 25px;
+
+    background: var(--border);
+}
+
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    padding: 0;
+    margin: 0 0 35px;
+
+    list-style: none;
+}
+
+.feature-list li {
+    position: relative;
+
+    padding-left: 23px;
+
+    color: #b0b0b0;
+
+    font-size: 0.87rem;
+}
+
+.feature-list li::before {
+    content: "✓";
+
+    position: absolute;
+    left: 0;
+
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.pricing-card .btn {
+    width: 100%;
+    margin-top: auto;
+
+    text-align: center;
+}
+
+/* =========================================================
+   BENEFITS
+========================================================= */
+
+.membership-benefits {
+    padding: 130px 0;
+
+    background: #0d0d0d;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 100px;
+}
+
+.benefits-heading h2 {
+    margin: 18px 0 30px;
+
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: 0.9;
+    letter-spacing: -0.03em;
+}
+
+.benefits-heading h2 span {
+    color: var(--accent);
+}
+
+.benefits-heading > p:not(.eyebrow) {
+    max-width: 450px;
+
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.benefits-list {
+    border-top: 1px solid var(--border);
+}
+
+.benefit-item {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 15px;
+
+    padding: 27px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.benefit-item > span {
+    color: var(--accent);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.benefit-item h3 {
+    margin-bottom: 8px;
+
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
+}
+
+.benefit-item p {
+    color: var(--muted);
+
+    font-size: 0.87rem;
+    line-height: 1.7;
+}
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.membership-faq {
+    padding: 130px 0;
+}
+
+.faq-heading {
+    margin-bottom: 55px;
+}
+
+.faq-heading h2 {
+    margin-top: 18px;
+
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: 0.9;
+    letter-spacing: -0.03em;
+}
+
+.faq-heading h2 span {
+    color: var(--accent);
+}
+
+.faq-list {
+    max-width: 900px;
+}
+
+.faq-list details {
+    border-top: 1px solid var(--border);
+}
+
+.faq-list details:last-child {
+    border-bottom: 1px solid var(--border);
+}
+
+.faq-list summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 0;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    list-style: none;
+}
+
+.faq-list summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-list summary span {
+    color: var(--accent);
+
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    transition: transform 0.25s ease;
+}
+
+.faq-list details[open] summary span {
+    transform: rotate(45deg);
+}
+
+.faq-list details p {
+    max-width: 700px;
+
+    padding: 0 40px 25px 0;
+
+    color: var(--muted);
+
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.membership-cta {
+    padding: 110px 0 130px;
+
+    background: #0d0d0d;
+}
+
+.cta-box p:not(.eyebrow) {
+    max-width: 450px;
+
+    margin: 0 auto 35px;
+
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 650px;
+    }
+
+    .pricing-card.featured {
+        transform: none;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .membership-hero {
+        min-height: 560px;
+    }
+
+    .membership-hero h1 {
+        font-size: clamp(2.2rem, 11.5vw, 3.6rem);
+    }
+
+    .membership-plans,
+    .membership-benefits,
+    .membership-faq {
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
+
+    .membership-cta {
+        padding: 80px 0;
+    }
+
+    .pricing-card {
+        min-height: auto;
+        padding: 32px 25px 27px;
+    }
+
+    .section-heading h2,
+    .benefits-heading h2,
+    .faq-heading h2 {
+        font-size: clamp(2.2rem, 10.5vw, 3rem);
+    }
+
+    
+}

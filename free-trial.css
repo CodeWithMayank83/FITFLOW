@@ -1,0 +1,345 @@
+/* =========================================================
+   FREE TRIAL PAGE
+========================================================= */
+
+/* HERO */
+
+.trial-hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.92),
+            rgba(0, 0, 0, 0.48)
+        ),
+        url("images/trial-hero.jpg") center / cover no-repeat;
+}
+
+.trial-hero-content {
+    max-width: 800px;
+    padding: 100px 0;
+}
+
+.trial-hero h1 {
+    margin: 20px 0 28px;
+
+    font-size: clamp(4rem, 8vw, 7.5rem);
+    line-height: 0.86;
+    letter-spacing: -0.03em;
+}
+
+.trial-hero h1 span {
+    color: var(--accent);
+}
+
+.trial-hero p:not(.eyebrow) {
+    max-width: 520px;
+
+    color: var(--muted);
+    line-height: 1.75;
+}
+
+/* BOOKING */
+
+.trial-booking {
+    padding: 130px 0;
+}
+
+.trial-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 100px;
+    align-items: start;
+}
+
+.trial-info h2 {
+    margin: 18px 0 30px;
+
+    font-size: clamp(3.5rem, 6vw, 6rem);
+    line-height: 0.86;
+    letter-spacing: -0.03em;
+}
+
+.trial-info h2 span {
+    color: var(--accent);
+}
+
+.trial-intro {
+    max-width: 480px;
+
+    margin-bottom: 50px;
+
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+/* BENEFITS */
+
+.trial-benefits {
+    border-top: 1px solid var(--border);
+}
+
+.trial-benefit {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    gap: 15px;
+
+    padding: 23px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.trial-benefit > span {
+    color: var(--accent);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.trial-benefit h3 {
+    margin-bottom: 7px;
+
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+}
+
+.trial-benefit p {
+    color: var(--muted);
+
+    font-size: 0.86rem;
+    line-height: 1.65;
+}
+
+/* FORM */
+
+.trial-form-wrapper {
+    padding: 38px;
+
+    background: var(--card);
+    border: 1px solid var(--border);
+}
+
+.form-header span {
+    color: var(--accent);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.form-header p {
+    margin: 0;
+
+    color: #8c8c8c;
+
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+}
+
+/* FORM FIELDS */
+
+.trial-form {
+    padding-top: 30px;
+}
+
+.form-group select {
+    cursor: pointer;
+}
+
+/* SUBMIT */
+
+.form-submit {
+    width: 100%;
+    margin-top: 5px;
+
+    border: none;
+    cursor: pointer;
+
+    font-family: inherit;
+}
+
+.form-note {
+    margin: 15px 0 0;
+
+    color: #8c8c8c;
+
+    font-size: 0.75rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* EXPECT */
+
+.trial-expect {
+    padding: 130px 0;
+
+    background: #0d0d0d;
+}
+
+.expect-heading {
+    margin-bottom: 60px;
+}
+
+.expect-heading h2 {
+    margin-top: 18px;
+
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: 0.88;
+    letter-spacing: -0.03em;
+}
+
+.expect-heading h2 span {
+    color: var(--accent);
+}
+
+.expect-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.expect-card {
+    min-height: 260px;
+
+    padding: 28px;
+
+    border-right: 1px solid var(--border);
+}
+
+.expect-card:last-child {
+    border-right: none;
+}
+
+.expect-card > span {
+    display: block;
+
+    margin-bottom: 75px;
+
+    color: var(--accent);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.expect-card h3 {
+    margin-bottom: 12px;
+
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+}
+
+.expect-card p {
+    color: var(--muted);
+
+    font-size: 0.85rem;
+    line-height: 1.7;
+}
+
+/* FINAL CTA */
+
+.trial-final {
+    padding: 120px 0 140px;
+}
+
+.trial-final-box {
+    padding: 110px 30px;
+
+    text-align: center;
+
+    background: var(--card);
+    border: 1px solid var(--border);
+}
+
+.trial-final-box h2 {
+    margin: 18px 0 25px;
+
+    font-size: clamp(3rem, 6vw, 6rem);
+    line-height: 0.85;
+    letter-spacing: -0.03em;
+}
+
+.trial-final-box h2 span {
+    color: var(--accent);
+}
+
+.trial-final-box > p:not(.eyebrow) {
+    max-width: 450px;
+
+    margin: 0 auto 35px;
+
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+
+    .trial-grid {
+        grid-template-columns: 1fr;
+        gap: 65px;
+    }
+
+    .expect-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .expect-card:nth-child(2) {
+        border-right: none;
+    }
+
+    .expect-card:nth-child(-n + 2) {
+        border-bottom: 1px solid var(--border);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .trial-hero {
+        min-height: 560px;
+    }
+
+    .trial-hero h1 {
+        font-size: 3.6rem;
+    }
+
+    .trial-booking,
+    .trial-expect,
+    .trial-final {
+        padding: 85px 0;
+    }
+
+    .trial-form-wrapper {
+        padding: 25px 20px;
+    }
+
+    
+
+    .expect-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .expect-card {
+        min-height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .expect-card:last-child {
+        border-bottom: none;
+    }
+
+    .expect-card > span {
+        margin-bottom: 45px;
+    }
+
+    .trial-final-box {
+        padding: 75px 20px;
+    }
+}
